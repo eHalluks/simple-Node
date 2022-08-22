@@ -1,0 +1,21 @@
+<%- include("header") %>
+
+    <h2>Formularz edycji wpisu do bloga</h2>
+
+    <form action="/edytujPost/<%= id %>" method="post">
+
+        <p>
+            <label>Tytuł:</label>
+            <input type="text" name="tytul" value="<%= post.tylul %>" />
+        </p>
+        <p>
+            <label>Tresc:</label>
+            <textarea name="tresc" value="<%= post.tresc %>"></textarea>
+        </p>
+        <p>
+            <button type="submit">Zmien</button>
+        </p>
+
+    </form>
+
+<%- include("footer") %>
