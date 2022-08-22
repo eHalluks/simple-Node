@@ -1,0 +1,24 @@
+<%- include("header") %>
+
+
+
+    <% dane.forEach(function(value, index){ %>
+
+        <p>
+            <b><%= value.tytul %></b>
+            <br/>
+            <b><%= value.tresc %></b>
+            <br/>
+            <a style="margin-right: 15px;" href="/edytujPost/<%= index %>">Edit</a>
+            <a href="/usunPost/<%= index %>">Remove</a>\
+            <!-- <a href="/dodajKomentarz/<%= index %>"></a>
+            -->
+        </p>
+
+    <%}) %>
+
+    
+
+
+
+<%- include("footer") %>
